@@ -38,6 +38,18 @@ public class Collections {
        System.out.println("Vymazané všetky párne čísla");
         System.out.println(numbers);
     }
+
+    public static void getEvenNumbers(List<Integer> integers){
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 0;i < integers.size(); i++){
+            if (integers.get(i)%2 == 0){
+                numbers.add(integers.get(i));
+            }
+
+        }
+        System.out.println("Vypisujem párne čísla z listu");
+        System.out.println(numbers);
+    }
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(1);
@@ -52,6 +64,7 @@ public class Collections {
      getIntegers(numbers);
      addIfNotExist(numbers,6);
      deleteEvenNumbers(numbers);
+     getEvenNumbers(numbers);
       /*  Sayable sayable = Collections::getIntegers;
         sayable.say();
         */
