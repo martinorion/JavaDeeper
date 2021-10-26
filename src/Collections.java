@@ -27,6 +27,17 @@ public class Collections {
 
     }
 
+    public static void deleteEvenNumbers(List<Integer> integers){
+        List<Integer> numbers = new ArrayList<>();
+       for (int i = 0;i < integers.size(); i++){
+           if (integers.get(i)%2 != 0){
+               numbers.add(integers.get(i));
+           }
+
+       }
+       System.out.println("Vymazané všetky párne čísla");
+        System.out.println(numbers);
+    }
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(1);
@@ -40,7 +51,7 @@ public class Collections {
 
      getIntegers(numbers);
      addIfNotExist(numbers,6);
-
+     deleteEvenNumbers(numbers);
       /*  Sayable sayable = Collections::getIntegers;
         sayable.say();
         */
