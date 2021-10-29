@@ -1,4 +1,5 @@
 import javax.sql.StatementEvent;
+import java.util.ArrayList;
 import java.util.stream.IntStream;
 
 public class Person {
@@ -13,32 +14,21 @@ public class Person {
         budget = budget1;
     }
 
-    public String getName() {
-        return name;
+public static void sumBudget(ArrayList<Person> people){
+    ArrayList<Integer> budget2 = new ArrayList<>();
+    people.forEach(i-> budget2.add(i.budget));
+    Integer sumOfBudgets = budget2.stream().reduce(0, (Integer::sum));
+    System.out.println("Suma budgetov je: " + sumOfBudgets);
     }
-    public int getAge() {
-        return age;
-    }
-    public int getBudget() {
-        return budget;
-    }
-
 
 
     public static void main(String[] args) {
-        Person p1 = new Person("John", 21, 23000);
-        Person p2 = new Person("Steve", 32, 40000);
-        Person p3 = new Person("Martin", 16, 2700);
+        ArrayList<Person> persones = new ArrayList<>();
+        persones.add(new Person("John", 21, 23000));
+        persones.add(new Person("Steve", 32, 40000));
+        persones.add(new Person("Martin", 16, 2700));
 
-
-
-            int[] array = new int[3];
-            array[0] = p1.budget;
-            array[1] = p2.budget;
-            array[2] = p3.budget;
-
-            int sum = IntStream.of(array).sum();
-            System.out.println(sum);
+        sumBudget(persones);
 
         }
 
