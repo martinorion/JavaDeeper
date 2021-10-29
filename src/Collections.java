@@ -61,6 +61,15 @@ public class Collections {
         System.out.println("Vypisujem párne čísla z listu");
         System.out.println(numbers);
     }
+
+    public static void multiply(List<Integer> integers){
+       ArrayList<Integer> numbers = new ArrayList<>();
+       integers.stream().map(x -> x* integers.size()).forEach(numbers::add);
+       System.out.println(numbers);
+    }
+
+
+
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(1);
@@ -73,8 +82,9 @@ public class Collections {
         numbers.add(5);
 
         ArrayList<Integer> numbers2 = new ArrayList<Integer>();numbers2.add(1);numbers2.add(1);numbers2.add(1);numbers2.add(2);numbers2.add(2);numbers2.add(3);numbers2.add(4);numbers2.add(5);
-
+        ArrayList<Integer> numbers3 = new ArrayList<Integer>();numbers3.add(1);numbers3.add(2);numbers3.add(3);
      deleteEvenNumbersVersion2(numbers2);
+     multiply(numbers3);
      System.out.println("---------------------------------\n");
      getIntegers(numbers);
      getIntegersReference(numbers);
