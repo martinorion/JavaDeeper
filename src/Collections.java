@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 interface Sayable{
@@ -92,8 +93,21 @@ public class Collections {
      deleteEvenNumbers(numbers);
      getEvenNumbers(numbers);
 
-      /*  Sayable sayable = Collections::getIntegers;
-        sayable.say();
+     System.out.println("\n-----------------------");
+     System.out.println("Cvičenie 8");
+        HashSet<Integer> numbers4 = new HashSet<>();
+        numbers4.add(1);
+        numbers4.add(1);
+        numbers4.add(1);
+        numbers4.add(2);
+        numbers4.add(2);
+        numbers4.add(3);
+        numbers4.add(4);
+        numbers4.add(5);
+        System.out.println(numbers4);
+        System.out.println(numbers4.add(1));
+      /*
+      HashSet uloží každu hodnotu len raz, neexistujú tam dve rovnaké hodnoty
         */
     }
 
