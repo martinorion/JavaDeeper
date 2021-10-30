@@ -70,7 +70,16 @@ public class Collections {
        System.out.println(numbers);
     }
 
+    public static void addToHashMap(HashMap<String,Integer> hashMap, String a, int b){
 
+       if (hashMap.containsKey(a)){
+           System.out.println("Už to je v hashy");
+    }
+       else{
+           hashMap.put(a,b);
+           System.out.println(hashMap);
+       }
+    }
 
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -117,6 +126,10 @@ public class Collections {
         colors.put("Black", 3);
         colors.put("White", 4);
         System.out.println(colors);
+
+        System.out.println("----------------" + "\nÚloha 10" );
+        addToHashMap(colors, "White",5);
+        addToHashMap(colors, "Grey",5);
     }
 
 
