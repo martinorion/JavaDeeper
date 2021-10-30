@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
@@ -109,6 +110,13 @@ public class Collections {
       /*
       HashSet uloží každu hodnotu len raz, neexistujú tam dve rovnaké hodnoty
         */
+
+        HashMap<String,Integer> colors = new HashMap<String,Integer>();
+        colors.put("Red", 1);
+        colors.put("Green", 2);
+        colors.put("Black", 3);
+        colors.put("White", 4);
+        System.out.println(colors);
     }
 
 
