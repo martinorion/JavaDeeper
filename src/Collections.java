@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 interface Sayable{
     void say();
@@ -130,9 +127,6 @@ public class Collections {
         System.out.println("----------------" + "\nÚloha 10" );
         addToHashMap(colors, "White",5);
         addToHashMap(colors, "Grey",5);
+
     }
-
-
-
-
 }
