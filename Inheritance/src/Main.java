@@ -1,9 +1,3 @@
-enum employment{
-    Teacher,
-    Programmer,
-    Driver
-
-}
 public class Main {
 
     public static void main(String[] args){
@@ -16,22 +10,6 @@ public class Main {
           Driver driver = new Driver(1000, 65);
           driver.getInfo();
 
-
-       /* Zatiaľ neviem či enum takto
-
-        employment a = employment.Teacher;
-        switch(a) {
-            case Teacher:
-               Teacher.getInfo();
-                break;
-            case Programmer:
-                Programmer.getInfo();
-                break;
-            case Driver:
-                Driver.getInfo();
-                break;
-        }
-          */
 
     }
 
