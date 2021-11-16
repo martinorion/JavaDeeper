@@ -1,3 +1,8 @@
+import Model.Driver;
+import Model.Employee;
+import Model.Programmer;
+import Model.Teacher;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -11,6 +16,10 @@ public class Main {
         employee.add(new Driver(1000, 65));
 
         employee.forEach(Employee::getInfo);
+
+        EmployeeServiceImpl service = new EmployeeServiceImpl();
+        service.totalSalary(employee);
+        service.totalBonus(employee);
     }
 
 

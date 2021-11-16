@@ -1,3 +1,4 @@
+package Model;
 
 public abstract class Employee {
     float salary;
@@ -13,4 +14,12 @@ public abstract class Employee {
     public void getInfo(){
         System.out.println(employeeType + "’s salary is " + salary + " and bonus is " + bonus);
     }
+
+    public float getSalary(){
+        return salary;
+}
+
+  public int getBonus(){
+        return bonus;
+  }
 }

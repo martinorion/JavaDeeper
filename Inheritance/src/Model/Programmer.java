@@ -1,3 +1,7 @@
+package Model;
+
+import Model.Employee;
+
 public class Programmer extends Employee {
 
     public Programmer(float salary, int bonus){
