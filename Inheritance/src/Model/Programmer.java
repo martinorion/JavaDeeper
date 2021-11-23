@@ -5,7 +5,7 @@ import Model.Employee;
 public class Programmer extends Employee {
 
     public Programmer(float salary, int bonus){
-        super(EmployeeType.Programmer, salary,bonus);
+        super(EmployeeType.PROGRAMMER, salary,bonus);
     }
     private final float sumSalary = salary + bonus;
 

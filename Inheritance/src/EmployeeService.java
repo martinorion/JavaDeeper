@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+
 public interface EmployeeService {
-    public static void totalSalary(){
+
+    static void totalSalary(){
 
     }
 
-    public static void totalBonus(){
+    static  void  totalBonus(){
 
     }
 }

@@ -12,7 +12,7 @@ public abstract class Employee {
     }
 
     public void getInfo(){
-        System.out.println(employeeType + "’s salary is " + salary + " and bonus is " + bonus);
+        System.out.println(employeeType.name + "’s salary is " + salary + " and bonus is " + bonus);
     }
 
     public float getSalary(){
